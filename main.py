@@ -3,7 +3,7 @@ from game import Game
 
 def main():
     theGame = Game("New")
-    theGame.startGame()
+    theGame.start_game()
 
 if __name__ == "__main__":
     main()
