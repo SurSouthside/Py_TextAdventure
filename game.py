@@ -2,6 +2,7 @@
 
 from player import Player
 from characterclass import CharacterClass
+from character import Character
 
 
 class Game:
@@ -23,12 +24,16 @@ class Game:
             case '1':
                 class_choice = CharacterClass('Fighter')
                 print("You selected Fighter")
+                theCharacter = Character.create_character(Character, char_name, 'Fighter')
+                print(theCharacter)
             case '2':
                 class_choice = CharacterClass('Mage')
                 print("You selected Mage")
-            case '31':
+                Character.create_character(Character, char_name, 'Mage')
+            case '3':
                 class_choice = CharacterClass('Thief')
                 print("You selected Thief")
+                Character.create_character(Character, char_name, 'Thief')
 
     def start_game(self):
         print("Welcome to Text Adventure")

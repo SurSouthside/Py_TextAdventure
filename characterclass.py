@@ -3,13 +3,11 @@
 from entity import Entity
 
 
-class CharacterClass:
-    game_states = ['Fighter', 'Mage', 'Thief']
-
-    name = ''
+class CharacterClass(Entity):
+    possible_classes = ['Fighter', 'Mage', 'Thief']
 
     def __init__(self, name):
         Entity.__init__(self, name)
 
     def get_name(self):
-        return self.name
+        return self._name

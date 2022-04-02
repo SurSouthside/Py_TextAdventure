@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from character import Character
-from characterclass import CharacterClass
 
 
 class Player(Character):
