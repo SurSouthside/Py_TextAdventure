@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
 from player import Player
-from characterclass import CharacterClass
-from character import Character
 
 
 class Game:
@@ -10,6 +8,7 @@ class Game:
 
     def __init__(self, state):
         self._state = state
+        self._player = Player('')
 
     def process_new_game(self):
         the_player = Player('Default')
@@ -31,6 +30,7 @@ class Game:
             case '3':
                 print("You selected Thief")
                 the_player.create_character(char_name, 'Thief')
+        return the_player
 
     def start_game(self):
         print("Welcome to Text Adventure")
@@ -40,7 +40,8 @@ class Game:
         start_screen_choice = input()
         if start_screen_choice == '1':
             print("New Game selected")
-            self.process_new_game()
+            player = self.process_new_game()
+            print(player)
         elif start_screen_choice == '2':
             print("Continue selected")
         else:

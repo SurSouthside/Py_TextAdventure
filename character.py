@@ -26,7 +26,5 @@ class Character(Entity):
     def set_name(self, name):
         self._name = name
 
-    def get_char_class(self):
-        return self._char_class
 
 
