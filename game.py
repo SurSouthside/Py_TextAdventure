@@ -40,7 +40,7 @@ class Game:
         start_screen_choice = input()
         if start_screen_choice == '1':
             print("New Game selected")
-            the_player = self.process_new_game()
+            self.process_new_game()
         elif start_screen_choice == '2':
             print("Continue selected")
         else:

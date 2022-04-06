@@ -9,6 +9,8 @@ class Character(Entity):
     def __init__(self, name):
         Entity.__init__(self, name)
         self._char_class = CharacterClass('')
+        self._level = 0
+        self._xp = 0
         self._hp = 0
         self._mp = 0
         self._strength = 0
