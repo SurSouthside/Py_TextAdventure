@@ -3,8 +3,8 @@ from game import Game
 
 
 def main():
-    theGame = Game("New")
-    theGame.start_game()
+    the_game = Game("New")
+    the_game.start_game()
 
 
 if __name__ == "__main__":
