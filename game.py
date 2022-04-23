@@ -3,6 +3,7 @@
 import os
 
 from player import Player
+from commandparser import CommandParser
 
 
 class Game:
@@ -14,6 +15,9 @@ class Game:
         self._game_state = ''
         self._available_game_statuses = ['exploration', 'battle', 'shopping']
         self._game_status = ''
+        self._command_parser = CommandParser()
+        self._last_command = ''
+        self._command_history = []
 
     def process_new_game(self):
         the_player = Player('Default')
