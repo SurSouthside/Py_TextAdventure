@@ -40,10 +40,17 @@ class Game:
                 the_player.create_character(char_name, 'Thief')
         return the_player
 
+    def receive_command(self):
+        command_input = input(">>>")
+        # print("You entered: " + command_input)
+        # print()
+        self._command_parser.parse_command(command_input, self._game_status)
+
     def enter_game_loop(self):
         self._game_status = 'exploration'
         print('Game loop entered')
         print('You are now in ' + self._game_status + ' mode. Type help for a list of available commands.')
+        self.receive_command()
 
     def start_new_game(self):
         os.system('cls')
