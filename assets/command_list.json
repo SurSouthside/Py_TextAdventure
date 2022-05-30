@@ -1,0 +1,7 @@
+{
+  "exploration_commands" : [
+    {
+      "name" : "help"
+    }
+  ]
+}
