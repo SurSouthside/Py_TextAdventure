@@ -2,6 +2,35 @@
   "exploration_commands" : [
     {
       "name" : "help"
+    },
+    {
+      "name" : "status"
+    },
+    {
+      "name" : "inventory"
+    }
+
+  ],
+  "battle_commands" : [
+    {
+      "name" : "help"
+    },
+    {
+      "name" : "status"
+    },
+    {
+      "name" : "inventory"
+    }
+  ],
+  "shop_commands" : [
+    {
+      "name" : "help"
+    },
+    {
+      "name" : "status"
+    },
+    {
+      "name" : "inventory"
     }
   ]
 }
