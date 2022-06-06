@@ -1,36 +1,77 @@
 {
   "exploration_commands" : [
     {
-      "name" : "help"
+      "name" : "help",
+      "description" : "Show other available commands"
     },
     {
-      "name" : "status"
+      "name" : "status",
+      "description" : "Show current player stats"
     },
     {
-      "name" : "inventory"
+      "name" : "inventory",
+      "description" : "Show current player inventory"
+    },
+    {
+      "name" : "explore",
+      "description" : "Search for items or enter a battle"
+    },
+    {
+      "name" : "fight",
+      "description" : "Search for enemies to engage in combat"
     }
 
   ],
   "battle_commands" : [
     {
-      "name" : "help"
+      "name" : "help",
+      "description" : "Show other available commands"
     },
     {
-      "name" : "status"
+      "name" : "status",
+      "description" : "Show current player stats"
     },
     {
-      "name" : "inventory"
+      "name" : "inventory",
+      "description" : "Show current player inventory"
+    },
+    {
+      "name" : "attack",
+      "description" : "Attack enemy with equipped weapon"
+    },
+    {
+      "name" : "defend",
+      "description" : "Brace for incoming attacks"
+    },
+    {
+      "name" : "item",
+      "description" : "Use item in inventory"
+    },
+    {
+      "name" : "flee",
+      "description" : "Attempt to escape from current battle"
     }
   ],
   "shop_commands" : [
     {
-      "name" : "help"
+      "name" : "help",
+      "description" : "Show other available commands"
     },
     {
-      "name" : "status"
+      "name" : "status",
+      "description" : "Show current player stats"
     },
     {
-      "name" : "inventory"
+      "name" : "inventory",
+      "description" : "Show current player inventory"
+    },
+    {
+      "name" : "buy",
+      "description" : "Browse items available for purchase"
+    },
+    {
+      "name" : "sell",
+      "description" : "Sell items in your inventory"
     }
   ]
 }

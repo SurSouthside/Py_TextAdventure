@@ -3,7 +3,6 @@
 import json
 import os
 
-
 class CommandParser:
 
     def __init__(self):
@@ -32,5 +31,12 @@ class CommandParser:
 
     def parse_command(self, command, game_status):
         print("You entered: " + command)
-        for i in self._command_list['exploration_commands']:
-            print(i)
+        if game_status == 'exploration':
+            for i in self._command_list['exploration_commands']:
+                print(i)
+        elif game_status == 'battle':
+            for i in self._command_list['battle_commands']:
+                print(i)
+        elif game_status == 'shop':
+            for i in self._command_list['shop_commands']:
+                print(i)
