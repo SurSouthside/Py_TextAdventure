@@ -33,10 +33,10 @@ class CommandParser:
         print("You entered: " + command)
         if game_status == 'exploration':
             for i in self._command_list['exploration_commands']:
-                print(i)
+                print(i['name'] + '-' + i['description'])
         elif game_status == 'battle':
             for i in self._command_list['battle_commands']:
-                print(i)
+                print(i['name'] + '-' + i['description'])
         elif game_status == 'shop':
             for i in self._command_list['shop_commands']:
-                print(i)
+                print(i['name'] + '-' + i['description'])
